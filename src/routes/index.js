@@ -1,7 +1,7 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { Favorites } from "../pages/favorites";
-import { Home } from "../pages/Home";
+import { StackRoutes } from "./stacksRoutes";
 import { Ionicons } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
@@ -22,7 +22,7 @@ export function Routes() {
       }}>
       <Tab.Screen
         name="HomeTab"
-        component={Home}
+        component={StackRoutes}
         options={{
           tabBarIcon: ({ color, size, focused }) => {
             if (focused) {
